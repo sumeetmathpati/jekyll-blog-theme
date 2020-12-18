@@ -1,0 +1,52 @@
+title: Jekyll Doc Theme
+description: >- # this means to ignore newlines until "baseurl:"
+  Beautiful Jekyll Blog Theme
+baseurl: "/jekyll-doc-theme"
+url: "https://sumeetmathpati.github.io"
+
+# author: sumeetmathpati
+favicon: "./logo.png" # relative path to site's favicon
+logo: "./logo.png"
+
+# Doc details
+release: "1.0"
+date: 2020-12-31 12:00 +0200
+
+permalink: /:title/
+include: ["_pages"]
+
+# Collections
+collections:
+  docs:
+    output: true
+
+# Default frontmatter
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "post"
+  
+
+# Build settings
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-toc
+
+# Markdown
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  entity_output: :as_input
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+    

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="">
+
+    <!-- Go to top button -->
+    <button onclick="topFunction()" id="go-to-top-button" title="Go to top">Top</button>
+
+    {% include navbar.html %}
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1040px;">
+
+        <div class="">
+
+            <div class="w3-col l12 w3-center">
+                <h1 style="padding: 128px;">{{ site.description }}</h1>
+            </div>
+
+            <!-- The Grid -->
+            <div class="w3-row w3-padding-left w3-padding-right">
+
+                {% for post in site.posts %}
+                <div class="w3-col l4" style="padding-left: 16px; padding-right: 16px; margin-bottom: 48px;">
+                    <div class="post-grid w3-round">
+                        <img class="" src="{{ site.baseurl }}{{ post.image }}" alt="Alps">
+                        <div class="w3-padding">
+                            <h4 class="title">{{ post.title }}</h4>
+                            <p class="description">{{ post.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+            <!-- End Grid -->
+        </div>
+
+
+
+    </div>
+    <!-- End Page Container -->
+    <br>
+
+    {% include footer.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+</body>
+
+</html>
