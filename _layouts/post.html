@@ -2,13 +2,26 @@
 layout: default
 ---
 
+<div class="w3-container w3-content" style="max-width:700px; margin-top: 32px;">
+    <img class="w3-round" src="{{ site.baseurl }}{{ page.image }}" alt="">
+</div>
+
 <div id="doc-header">
-    <h1 id="doc-title">{{ page.title }}</h1>
+    <h1 class="w3-center" id="doc-title">{{ page.title }}</h1>
 </div>
 
 <hr>
+<ul>
+    <li style="display: inline-block;">{{ page.date | date_to_long_string }}</li>
+    <li style="display: inline-block;">
+        {% for tag in page.tags %}    
+            <span>{{tag}}</span>    
+        {% endfor %}
+    </li>
+    <li style="display: inline-block;">{{ page.readtime }}</li>
+</ul>
 
-<div id="doc-content">
+<div class="w3-container w3-content" style="max-width:700px;" id="doc-content">
     {{ content }}
 </div>
 

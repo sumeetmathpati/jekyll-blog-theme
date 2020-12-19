@@ -14,13 +14,16 @@ h5 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto Slab";
     font-weight: bold;
 }
 
 p, a, li {
     font-size: 18px;
     color: #333;
+}
+
+a {
+    text-decoration: none;
 }
 
 img {
@@ -276,7 +279,7 @@ p > code {
 
 /* Navbar */
 #navbar {
-    z-index: 8;
+    z-index: 3;
     position: fixed;
     top: 0;
     width: 100%;
@@ -287,11 +290,13 @@ p > code {
 #navbar a {
     float: left;
     display: block;
-    /* color: #f2f2f2; */
     text-align: center;
-    padding: 15px;
     text-decoration: none;
     font-size: 17px;
+}
+#navbar #sitename {
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
 }
 
 /* Navbar End */
@@ -327,6 +332,9 @@ p > code {
 
 #doc-title {
     font-size: 48px;
+    font-family: "Rubik";
+    font-weight: 900;
+    font-size: 80px;
 }
 
 .code-example{

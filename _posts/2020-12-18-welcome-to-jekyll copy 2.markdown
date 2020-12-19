@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Welcome Welcome Welcome to Jekyll!"
-date:   2020-12-18 19:36:38 +0530
-categories: jekyll update
+date:   2000-12-18 19:36:38 +0530
+tags: [jekyll, update]
 image: /assets/images/google-domains-vs-godaddy-namescheap.png
 description: I built an e-commerce website without paying a dime to any CMS. There will be no
+readtime: 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

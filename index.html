@@ -4,3 +4,27 @@ description: "Place for GATE computer science tutorial, previous year question p
 permalink: /
 ---
 
+<div class="w3-row w3-padding-left w3-padding-right">
+
+    <div class="w3-col l12 w3-center">
+        <h1 style="padding-top: 128px; padding-bottom: 128px; font-family: Rubik; font-size: 80px; font-weight: 900;">{{ site.description }}</h1>
+    </div>
+
+    {% for post in site.posts %}
+    <div class="w3-col l4" style="padding-left: 16px; padding-right: 16px; margin-bottom: 48px;">
+
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <div class="post-grid w3-round">
+                <img class="" src="{{ site.baseurl }}{{ post.image }}" alt="Alps">
+                <div class="w3-padding">
+                    <h4 class="title">{{ post.title }}</h4>
+                    <p class="description">{{ post.description }}</p>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+    {% endfor %}
+
+</div>
