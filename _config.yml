@@ -39,6 +39,18 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
 
+# _config.yml
+toc:
+  min_level: 1
+  max_level: 1
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
+
 # Markdown
 markdown: kramdown
 

@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    text-rendering: optimizeLegibility;
 }
 
 html,
@@ -10,24 +11,44 @@ h3,
 h4,
 h5 {
     font-family: "Open Sans", sans-serif;
-    color: #333;
+    color: #606c71;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    color: #159957;
 }
 
 p, a, li {
     font-size: 18px;
-    color: #333;
+    color: #606c71;
 }
 
 a {
     text-decoration: none;
 }
 
-img {
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: #eff0f1;
+    border: 0;
+}
+
+img, iframe {
     width: 100%;
+    border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+iframe {
+    height: 315px;
+}
+
+#doc-content > p > img,
+#doc-content > iframe {
+    box-shadow: 0 15px 35px rgba(50,50,93,0.1),0 5px 15px rgba(0,0,0,0.07) !important;
 }
 
 #main {
@@ -67,15 +88,16 @@ h3 > code,
 h4 > code,
 h5 > code,
 h6 > code {
-    background-color: #f5f7f8;
-    border: 1px solid #becbd2;
+    background-color: #f3f6fa;
     border-radius: 4px;
+    padding: 2px 4px;
 }
 p > code {
-    color: crimson;
+    color: #567482;
 }
 .codebox {
     border-radius: 4px;
+    border: solid 1px #dce6f0;
 }
 .code-name {
     border-top-right-radius: 4px;
@@ -83,10 +105,18 @@ p > code {
     padding-top: 4px;
     padding-bottom: 4px;
     margin: 0;
+    background-color: #f3f6fa;
+    font-size: 1em;
+    text-align: left;
 }
 .highlight {
     margin: 0;
     border-radius: 4px;
+    border: solid 1px #dce6f0;
+}
+.codebox > .highlight {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 .highlight > pre {
     margin: 0;
@@ -100,7 +130,7 @@ p > code {
 .note {
     border-radius: 4px;
     background-color: #dfe5e8;
-    border-left: 5px solid #7d97a5;
+    border-left: 5px solid #7eb63d;
     padding: 16px;
 }
 
@@ -121,7 +151,7 @@ p > code {
 
 .btn {
     color: #fff;
-    background-color: #57707d;
+    background-color: #7eb63d;
     border: none;
     display: inline-block;
     padding: 8px 16px;
@@ -168,7 +198,7 @@ p > code {
     background-color: #6ec071;
 }
 .btn-info {
-    color: #333;
+    color: #606c71;
     background-color: #becbd2;
     border: none;
     display: inline-block;
@@ -198,7 +228,7 @@ p > code {
     color:#fff;
     text-transform:uppercase;
     vertical-align:middle;
-    background-color:#57707d;
+    background-color:#7eb63d;
     font-size:13px !important;
     /* border-radius:12px */
 }
@@ -225,33 +255,14 @@ p > code {
 .code-example > table{
     border-collapse:collapse;
     border-spacing:0;
-    width:100%;
-    display:table;
-    border:2px solid #becbd2;
-    margin-bottom: 32px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.12),0 3px 10px rgba(0,0,0,0.08);
+    width:100%;display:table;
+    border: 1px solid #dce6f0;
 }
 #doc-content > table > thead > tr,
 #doc-content > table > tbody > tr,
 .code-example > table > thead > tr,
 .code-example > table > tbody > tr{
-    border-bottom:1px solid #f5f7f8
-}
-#doc-content > table > thead > tr:nth-child(odd),
-#doc-content > table > tbody > tr:nth-child(odd),
-.code-example > table > thead > tr:nth-child(odd),
-.code-example > table > tbody > tr:nth-child(odd) {
-    background-color:#fff
-}
-#doc-content > table > thead > tr:nth-child(even),
-#doc-content > table > tbody > tr:nth-child(even),
-.code-example > table > thead > tr:nth-child(even),
-.code-example > table > tbody > tr:nth-child(even) {
-    background-color:#f1f1f1
-}
-#doc-content > table > tbody tr:hover,
-.code-example > table > tbody tr:hover {
-    background-color:#becbd2
+    border-bottom:1px solid #dce6f0;
 }
 #doc-content > table > thead > tr > th,
 #doc-content > table > tbody > tr > td,
@@ -261,7 +272,7 @@ p > code {
     display:table-cell;
     text-align:left;
     vertical-align:top;
-    border-right: 1px solid #becbd2;
+    border-right: 1px solid #dce6f0;
 }
 
 #doc-content > table > thead > tr > th:first-child,
@@ -270,12 +281,31 @@ p > code {
 .code-example > table > tbody > tr > td:first-child {
     padding-left:16px;
 }
-#doc-content > table > thead > tr > th,
-.code-example > table > thead > tr > th {
-    background-color: #7d97a5;
-    color: white;
-}
 /* Table End */
+
+/* TOC */
+#table-of-contents {
+    padding: 16px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+#table-of-contents .section-nav {
+    margin: 0;
+}
+#table-of-contents > h3 {
+    margin: 0;
+    color: #606c71;
+}
+.toc-entry {
+    margin-bottom: 0;
+}
+.toc-entry a {
+    color: #159957;
+}
+.toc-entry > ul{
+    margin: 0;
+}
+/* TOC End */
 
 /* Navbar */
 #navbar {
@@ -285,7 +315,6 @@ p > code {
     width: 100%;
     display: block;
     transition: top 0.3s;
-    background-color: white;
 }
 #navbar a {
     float: left;
@@ -298,7 +327,6 @@ p > code {
     font-family: "Open Sans", sans-serif;
     font-size: 32px;
 }
-
 /* Navbar End */
 
 /* Go to top button */
@@ -311,30 +339,34 @@ p > code {
     font-size: 16px;
     border: none;
     outline: none;
-    background-color: #303e45;
-    color: #becbd2;
+    background-color: #819198;
+    color: #d1d8da;
     cursor: pointer;
     padding: 16px;
     border-radius: 4px;
+    opacity: 50%;
 }
 
 #go-to-top-button:hover {
-  background-color: #3a4b53;
+  opacity: 75%;
 }
 /* Go to top button End */
 
+#doc-content > h1,
+#doc-content > h1,
+#doc-content > h1,
+#doc-content > h1,
+#doc-content > h1,
 #doc-content > h1 {
     margin-top: 40px;
-}
-#doc-content > h2 {
-    margin-top: 24px;
+    margin-bottom: 10px;
 }
 
 #doc-title {
-    font-size: 48px;
     font-family: "Rubik";
     font-weight: 900;
     font-size: 80px;
+    color: #606c71;
 }
 
 .code-example{
@@ -342,7 +374,7 @@ p > code {
     padding: 16px;
 }
 
-/* Index page grid */
+/* Index page */
 .post-grid {
     box-shadow: 0 15px 35px rgba(50,50,93,0.1),0 5px 15px rgba(0,0,0,0.07) !important;
     position: relative;
@@ -370,7 +402,7 @@ p > code {
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
-/* Index Page grid ENd */
+/* Index Page ENd */
 
 /* Small Screen Style */
 @media (max-width:600px) {
@@ -385,11 +417,24 @@ p > code {
         margin-top: 48px;
         margin-left: 0;
     }
+    #doc-title {
+        font-size: 48px;
+    }
 }
 /* Small Screen Style End */
 
+/* Medium Screen Style */
+@media (min-width:601px) {
+    #doc-title {
+        font-size: 64px;
+    }
+}
+/* Medium Screen Style End */
+
 /* Large Screen Style */
-@media (max-width:993px) {
-    
+@media (min-width:993px) {
+    #doc-title {
+        font-size: 70px;
+    }
 }
 /* Large Screen Style End */
