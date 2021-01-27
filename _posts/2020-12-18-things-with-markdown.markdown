@@ -9,7 +9,6 @@ toc: true
 featured: true
 ---
 
-
 # Heading 1
 {: .no_toc}
 ## Heading 2

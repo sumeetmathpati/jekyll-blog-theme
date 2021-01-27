@@ -10,7 +10,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Rubik", sans-serif;
     color: #606c71;
 }
 
@@ -151,7 +151,7 @@ p > code {
 
 .btn {
     color: #fff;
-    background-color: #7eb63d;
+    background-color: #159957;
     border: none;
     display: inline-block;
     padding: 8px 16px;
@@ -163,58 +163,8 @@ p > code {
     white-space: nowrap;
 }
 .btn:hover {
-    background-color: #7d97a5;
+    background-color: #0d6439;
 }
-.btn-red {
-    color: #fff;
-    background-color: #f32617;
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.btn-red:hover {
-    background-color: #f6665c;
-}
-.btn-green {
-    color: #fff;
-    background-color: #459c48;
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.btn-green:hover {
-    background-color: #6ec071;
-}
-.btn-info {
-    color: #606c71;
-    background-color: #becbd2;
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.btn-info:hover {
-    background-color: #dfe5e8;
-}
-/* Buttons */
-
 /* Labels */
 .label,
 .label-blue {
@@ -324,8 +274,9 @@ p > code {
     font-size: 17px;
 }
 #navbar #sitename {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka One", sans-serif;
     font-size: 32px;
+    color: black;
 }
 /* Navbar End */
 
@@ -339,7 +290,7 @@ p > code {
     font-size: 16px;
     border: none;
     outline: none;
-    background-color: #819198;
+    background-color: #159957;
     color: #d1d8da;
     cursor: pointer;
     padding: 16px;
@@ -394,6 +345,8 @@ p > code {
     display: -webkit-box;
     -webkit-line-clamp: 1; /* number of lines to show */
     -webkit-box-orient: vertical;
+    font-weight: bold;
+    font-size: 22px;
 }
 .post-grid .description {
     overflow: hidden;

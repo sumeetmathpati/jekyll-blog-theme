@@ -1,79 +1,6 @@
-<!DOCTYPE html>
-<html>
+I"¢<p><button>Button</button></p>
 
-<head>
-    
-    <title>Things you can do with Markdown!</title>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="/jekyll-doc-theme/assets/css/w3-theme-light-green.css">
-    <link rel="stylesheet" href="/jekyll-doc-theme/assets/css/styles.css">
-    <link rel="stylesheet" href="/jekyll-doc-theme/assets/css/syntax-highlight.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Fredoka+One&family=Rubik:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  </head>
-
-<body class="">
-
-    <!-- Go to top button -->
-    <button onclick="topFunction()" id="go-to-top-button" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
-    <div id="navbar" class="w3-bar">
-    <div class="w3-container w3-content" style="max-width:1040px;">
-        <a id="sitename" href="/jekyll-doc-theme/" class="w3-hover-white w3-bar-item w3-button">Jekyll Doc Theme</a>
-    </div>
-</div>
-
-    <!-- Page Container -->
-    
-    <div class="w3-container w3-content" style="max-width:1040px; margin-top: 64px;">
-    
-
-        <div class="">
-
-            <div class="w3-content" style="max-width:600px; ">
-    <img class="w3-round w3-center" src="/jekyll-doc-theme/assets/images/google-domains-vs-godaddy-namescheap.png" alt=""
-        style="box-shadow: 0 15px 35px rgba(50,50,93,0.1),0 5px 15px rgba(0,0,0,0.07) !important;">
-
-</div>
-
-<div id="doc-header">
-    <h1 class="w3-center" id="doc-title">Things you can do with Markdown!</h1>
-</div>
-
-<hr>
-<!-- <ul>
-    <li style="display: inline-block; color: #aaa; margin-right: 32px;"><i class="far fa-calendar"></i> 18 December 2000</li>
-    <li style="display: inline-block; color: #aaa;">
-        <i class="fas fa-tags"></i>
-            
-            <span class="label w3-theme-d1" style="margin: 0;">jekyll</span>    
-            
-            <span class="label w3-theme-d1" style="margin: 0;">update</span>    
-            
-            <span class="label w3-theme-d1" style="margin: 0;">one</span>    
-            
-            <span class="label w3-theme-d1" style="margin: 0;">teo</span>    
-        
-    </li>
-    <li style="display: inline-block;"></li>
-</ul> -->
-
-<div class="w3-container w3-content" style="max-width:700px;" id="doc-content">
-    <div id="table-of-contents">
-        <h3>Table of Contents</h3>
-        <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#special-formatting">Special formatting</a></li>
-<li class="toc-entry toc-h1"><a href="#writing-code-blocks">Writing code blocks</a></li>
-<li class="toc-entry toc-h1"><a href="#reference-lists">Reference lists</a></li>
-<li class="toc-entry toc-h1"><a href="#table">Table</a></li>
-<li class="toc-entry toc-h1"><a href="#full-html">Full HTML</a></li>
-</ul>
-    </div>
-
-    <h1 class="no_toc" id="heading-1">Heading 1</h1>
+<h1 class="no_toc" id="heading-1">Heading 1</h1>
 <h2 id="heading-2">Heading 2</h2>
 <h3 id="heading-3">Heading 3</h3>
 <h4 id="heading-4">Heading 4</h4>
@@ -180,19 +107,4 @@
 
 <iframe src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-
-</div>
-            
-        </div>
-
-    </div>
-    <!-- End Page Container -->
-    <br>
-
-    
-
-    <script src="/jekyll-doc-theme/assets/js/main.js"></script>
-
-</body>
-
-</html>
+:ET

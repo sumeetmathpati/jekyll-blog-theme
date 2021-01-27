@@ -11,7 +11,11 @@
     {% include navbar.html %}
 
     <!-- Page Container -->
+    {% if page.url == "/" %}
     <div class="w3-container w3-content" style="max-width:1040px; margin-top: 80px;">
+    {% else %}
+    <div class="w3-container w3-content" style="max-width:1040px; margin-top: 64px;">
+    {% endif %}
 
         <div class="">
 
